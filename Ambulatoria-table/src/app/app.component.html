@@ -1,0 +1,96 @@
+<div *ngIf="this.state == 0">
+  <div class="table-page">
+    <table class="table">
+      <thead>
+        <tr>
+          <th *ngFor="let header of this.headers">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of this.data">
+          <td *ngFor="let header of this.headers; index as i;">
+            {{ row[i] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div *ngIf="this.state == 1">
+  <div class="table-page">
+    <table class="table">
+      <thead>
+        <tr>
+          <th *ngFor="let header of this.doctors_headers">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of this.doctors_data">
+          <td *ngFor="let header of this.doctors_headers; index as i;">
+            {{ row[i] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  <div *ngIf="this.state == 2">
+    <div class="table-page">
+      <table class="table">
+        <thead>
+          <tr>
+            <th *ngFor="let header of this.shedule_headers">{{ header }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of this.shedule_data">
+            <td *ngFor="let header of this.shedule_headers; index as i;">
+              {{ row[i] }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div *ngIf="this.state == 3">
+    <div class="page">
+      <div class="image">
+        <img src={{this.picPath}}>
+      </div>
+      
+      <div class="text">
+        <div class="name">{{ this.name }}</div>
+        <div class="bio">{{ this.bio }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="this.state == 4">
+    <div class="page">
+      <div class="image">
+        <img src={{this.picPath}}>
+      </div>
+      
+      <div class="text">
+        <div class="name">{{ this.name }}</div>
+        <div class="bio">{{ this.bio }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="this.state == 5">
+    <div class="page">
+      <div class="image">
+        <img src={{this.picPath}}>
+      </div>
+      
+      <div class="text">
+        <div class="name">{{ this.name }}</div>
+        <div class="bio">{{ this.bio }}</div>
+      </div>
+    </div>
+  </div>
